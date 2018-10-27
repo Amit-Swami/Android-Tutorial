@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "5886978862",
+    "firebase_url": "https://android-tutorial-27570.firebaseio.com",
+    "project_id": "android-tutorial-27570",
+    "storage_bucket": "android-tutorial-27570.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5886978862:android:54cadb48932fdc9f",
+        "android_client_info": {
+          "package_name": "com.example.dell.androidtutorials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5886978862-6m31pi5vvrsm5f8ucru1uoifar6o2q12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnD8gtSyVlybCwCK96393Td21jmXv1ebw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

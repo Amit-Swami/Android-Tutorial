@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List4Tab1"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 1:Make a empty activity and do coding like below"
+        android:textStyle="italic"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="activity_main.xml"
+        android:textStyle="bold"
+        android:textColor="#ff0000"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ss11"
+        android:layout_marginTop="-65dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ss12"
+        android:layout_marginTop="-123dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MainActivity.java"
+        android:textStyle="bold"
+        android:textColor="#a4c639"
+        android:layout_marginTop="-30dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ss13"
+        android:layout_marginTop="-60dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ss14"
+        android:scaleType="fitXY"
+        android:layout_marginTop="-100dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 2:Now make 3 blank fragment activities like from below"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ss15"
+        android:layout_marginTop="-200dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 3:Put the images in the drawable folder(app > res > drawable)which you want to appear on the click of button "
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:layout_marginTop="-200dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 4:Now make the image view inside each 3 fragment_activity.xml like below and leave the Fragment.java file as it is"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ss16"
+        android:layout_marginTop="-30dp"/>
+
+</LinearLayout>
+</ScrollView>

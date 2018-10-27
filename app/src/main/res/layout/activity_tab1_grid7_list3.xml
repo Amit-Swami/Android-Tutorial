@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab1Grid7List3"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Tutorial"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contextual menu:"
+        android:textColor="#a4c"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:text="Use a contextual menu to allow users to take an action on a selected view. You can provide a context menu for any View, but they are most often used for items in a RecyclerView, GridView, or other view collections in which the user can perform direct actions on each item.
+Android provides two kinds of contextual menus:"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="16sp"
+       android:layout_marginTop="20dp"
+       android:textColor="#000"
+       android:text="* A context menu, shown on the left side in the figure below, appears as a floating list of menu items when the user performs a long tap on a view element on the screen. It is typically used to modify the view element or use it in some fashion. For example, a context menu might include Edit to edit a view element, Delete to delete it, and Share to share it over social media. Users can perform a contextual action on one view element at a time."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:text="* A Contextual action bar, shown on the right side of the figure below, appears at the top of the screen in place of the app bar or underneath the app bar, with action items that affect the selected view element(s). Users can perform an action on multiple view elements at once (if your app allows it)."/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gg45"/>
+
+</LinearLayout>
+</ScrollView>

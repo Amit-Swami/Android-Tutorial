@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List11Tab1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="activity_main.xml"
+        android:textColor="#ff0000"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ss36"
+        android:layout_marginTop="-80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MainActivity.java"
+        android:textStyle="bold"
+        android:textColor="#a4c639"
+        android:layout_marginTop="-80dp"/>
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ss37"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Below i took a single java class from(rightclick java > New > Java class)"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receiver.java"
+        android:textStyle="bold"
+        android:textColor="#4ac"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ss38"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Now add Permission inside the AndroidManifest.xml with receiver tag"
+        android:textStyle="italic"
+        android:layout_marginTop="-20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AndroidManifest.xml"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#008080"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ss39"
+        android:layout_marginTop="-60dp"/>
+
+</LinearLayout>
+</ScrollView>

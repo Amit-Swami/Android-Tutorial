@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab1Grid5List3"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Tutorial"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.Toolbar>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#000"
+    android:textSize="16sp"
+    android:text="Because of the arbitrary nature of Implicit Intents, the system uses a process called Intent Resolution to map them correctly. The system does by intent matching with the description have the default descriptions in the system.
+
+Intent Filters are associated with the different Android components, and able to receive Intent. Intent filter is a way for Android components to declare their capabilities to the Android system.
+
+Filters play an main role in defining the kind of intent an Android component can receive. A component have no filters can receive Explicit Intents only, whereas components with filters can capable of receiving both Implicit and Explicit Intents. The Intent Resolution uses the following information to map the Intent to the appropriate Android component:"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="italic|bold"
+        android:text="* The action"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="italic|bold"
+        android:text="* The type (data type and URI)"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="italic|bold"
+        android:text="* The category"/>
+
+
+
+</LinearLayout>

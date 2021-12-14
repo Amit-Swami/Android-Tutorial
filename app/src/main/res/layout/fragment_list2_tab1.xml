@@ -1,58 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".List2Tab1"
-    android:orientation="vertical">
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="activity_main.xml"
-        android:textStyle="bold"
-        android:textColor="#ff0000"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4386795674493212/5883997511" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss3" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MainActivity.java"
-        android:textStyle="bold"
-        android:textColor="#a4c639"/>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss4"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="activity_main2.xml"
-        android:textStyle="bold"
-        android:textColor="#ff0000"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss5"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MainActivity2.java"
-        android:textStyle="bold"
-        android:textColor="#a4c639"/>
 
-    <ImageView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ss6"/>
+        android:layout_below="@id/adView27">
 
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:text="MainActivity.java"
+            android:textColor="@android:color/black"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <br.tiagohm.codeview.CodeView
+                android:id="@+id/code_view_explicit1"
+                android:layout_width="1000.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                app:cv_font_size="12"
+                app:cv_show_line_number="true"
+                app:cv_start_line_number="1"
+                app:cv_wrap_line="true"
+                app:cv_zoom_enable="true" />
+
+        </LinearLayout>
+
+</HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.0dip"
+            android:text="Explicit.java"
+            android:textColor="@android:color/black"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <br.tiagohm.codeview.CodeView
+                    android:id="@+id/code_view_explicit2"
+                    android:layout_width="1000.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip"
+                    app:cv_font_size="12"
+                    app:cv_show_line_number="true"
+                    app:cv_start_line_number="1"
+                    app:cv_wrap_line="true"
+                    app:cv_zoom_enable="true" />
+
+            </LinearLayout>
+
+</HorizontalScrollView>
 
 </LinearLayout>
-</ScrollView>
+
+</androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

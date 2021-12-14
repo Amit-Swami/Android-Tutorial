@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/List4b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B1" />
+
+    <Button
+        android:id="@+id/List4b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/List4b1"
+        android:text="B2" />
+
+    <Button
+        android:id="@+id/List4b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/List4b2"
+        android:text="B3" />
+
+    <FrameLayout
+        android:id="@+id/List4frm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/List4b3" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370.0dip"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4386795674493212/5507194192" />
+
+</RelativeLayout>

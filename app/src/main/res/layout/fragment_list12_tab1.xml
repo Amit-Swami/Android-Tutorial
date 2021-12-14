@@ -1,76 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".List12Tab1"
-    android:orientation="vertical">
-    <TextView
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="activity_main.xml"
-        android:textColor="#ff0000"
-        android:textStyle="bold"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss40"
-        android:layout_marginTop="-30dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MainActivity.java"
-        android:textStyle="bold"
-        android:textColor="#a4c639"
-        android:layout_marginTop="-25dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4386795674493212/2090547576" />
 
 
-    <ImageView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ss41"
-        android:layout_marginTop="-50dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Now take a single java class(Vibrate.class)"
-        android:textColor="#000000"
-        android:textStyle="italic"
-        android:layout_marginTop="-60dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vibrate.java"
-        android:textStyle="bold"
-        android:textColor="#4ac"
-        android:layout_marginTop="20dp"/>
+        android:layout_below="@id/adView39">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss42"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Also give the permission inside AndroidManifest.xml within service tag"
-        android:textColor="#000000"
-        android:textStyle="italic"
-        android:layout_marginTop="-30dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="#008080"
-        android:text="AndroidManifest.xml"
-        android:layout_marginTop="20dp"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss43"
-        android:layout_marginTop="-60dp"/>
 
-</LinearLayout>
-</ScrollView>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="MainActivity.java"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <br.tiagohm.codeview.CodeView
+                        android:id="@+id/code_view_main"
+                        android:layout_width="1000.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dip"
+                        app:cv_font_size="12"
+                        app:cv_show_line_number="true"
+                        app:cv_start_line_number="1"
+                        app:cv_wrap_line="true"
+                        app:cv_zoom_enable="true" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="create a single java class (Vibrate):"
+                android:textColor="#ff000000"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="Vibrate.java"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <br.tiagohm.codeview.CodeView
+                        android:id="@+id/code_view_vibrate"
+                        android:layout_width="1000.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dip"
+                        app:cv_font_size="12"
+                        app:cv_show_line_number="true"
+                        app:cv_start_line_number="1"
+                        app:cv_wrap_line="true"
+                        app:cv_zoom_enable="true" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

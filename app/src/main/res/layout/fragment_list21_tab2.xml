@@ -1,37 +1,253 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".List20Tab2"
-    android:id="@+id/list21drawerlayout">
-    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView44"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <include layout="@layout/list21_nav_action"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <TextView
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4386795674493212/8917354968" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adView44">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
-            android:text="This is Navigation Drawer"
-            android:textStyle="italic"
-            android:textColor="#000000"
-            android:textSize="30dp"/>
-    </RelativeLayout>
-    <android.support.design.widget.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/list21navView"
-        app:headerLayout="@layout/list21_nav_header"
-        app:menu="@menu/list21_nav_menu"
-        android:layout_gravity="start">
+            android:orientation="vertical">
 
-    </android.support.design.widget.NavigationView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="activity_main.xml"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
 
 
-</android.support.v4.widget.DrawerLayout>
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <br.tiagohm.codeview.CodeView
+                        android:id="@+id/code_view_xml"
+                        android:layout_width="700.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dip"
+                        app:cv_font_size="12"
+                        app:cv_show_line_number="true"
+                        app:cv_start_line_number="1"
+                        app:cv_wrap_line="true"
+                        app:cv_zoom_enable="true" />
+
+                </LinearLayout>
+
+        </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="Now create 2 layout resource file inside menu directory(nav_menu.xml, nav_main.xml):"
+                android:textColor="#ff000000"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="nav_menu.xml"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <br.tiagohm.codeview.CodeView
+                        android:id="@+id/code_view_nav_menu"
+                        android:layout_width="700.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dip"
+                        app:cv_font_size="12"
+                        app:cv_show_line_number="true"
+                        app:cv_start_line_number="1"
+                        app:cv_wrap_line="true"
+                        app:cv_zoom_enable="true" />
+
+                </LinearLayout>
+
+        </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="nav_main.xml"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <br.tiagohm.codeview.CodeView
+                        android:id="@+id/code_view_nav_main"
+                        android:layout_width="700.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dip"
+                        app:cv_font_size="12"
+                        app:cv_show_line_number="true"
+                        app:cv_start_line_number="1"
+                        app:cv_wrap_line="true"
+                        app:cv_zoom_enable="true" />
+
+                </LinearLayout>
+
+        </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="Now create 2 layout resource file inside layout directory(nav_header.xml, nav_action.xml):"
+                android:textColor="#ff000000"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="nav_header.xml"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <br.tiagohm.codeview.CodeView
+                        android:id="@+id/code_view_nav_header"
+                        android:layout_width="700.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dip"
+                        app:cv_font_size="12"
+                        app:cv_show_line_number="true"
+                        app:cv_start_line_number="1"
+                        app:cv_wrap_line="true"
+                        app:cv_zoom_enable="true" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="nav_action.xml"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <br.tiagohm.codeview.CodeView
+                        android:id="@+id/code_view_nav_action"
+                        android:layout_width="700.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dip"
+                        app:cv_font_size="12"
+                        app:cv_show_line_number="true"
+                        app:cv_start_line_number="1"
+                        app:cv_wrap_line="true"
+                        app:cv_zoom_enable="true" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="strings.xml"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <br.tiagohm.codeview.CodeView
+                        android:id="@+id/code_view_strings"
+                        android:layout_width="700.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dip"
+                        app:cv_font_size="12"
+                        app:cv_show_line_number="true"
+                        app:cv_start_line_number="1"
+                        app:cv_wrap_line="true"
+                        app:cv_zoom_enable="true" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,80 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".List11Tab1"
-    android:orientation="vertical">
+<?xml version="1.0" encoding="UTF-8"?>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="activity_main.xml"
-        android:textColor="#ff0000"
-        android:textStyle="bold"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss36"
-        android:layout_marginTop="-80dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MainActivity.java"
-        android:textStyle="bold"
-        android:textColor="#a4c639"
-        android:layout_marginTop="-80dp"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="380dp"
-        android:layout_height="300dp"
-        android:src="@drawable/ss37"
-        android:scaleType="fitXY"
-        android:layout_marginTop="20dp"/>
-    <TextView
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Below i took a single java class from(rightclick java > New > Java class)"
-        android:textColor="#000000"
-        android:textStyle="italic"
-        android:layout_marginTop="20dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Receiver.java"
-        android:textStyle="bold"
-        android:textColor="#4ac"
-        android:layout_marginTop="20dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4386795674493212/6221364271" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss38"
-        android:layout_marginTop="10dp"/>
 
-    <TextView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:text="Now add Permission inside the AndroidManifest.xml with receiver tag"
-        android:textStyle="italic"
-        android:layout_marginTop="-20dp"/>
+        android:layout_below="@id/adView37">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AndroidManifest.xml"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textColor="#008080"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss39"
-        android:layout_marginTop="-60dp"/>
 
-</LinearLayout>
-</ScrollView>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="MainActivity.java"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+            <br.tiagohm.codeview.CodeView
+                android:id="@+id/code_view_main"
+                android:layout_width="1000.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                app:cv_font_size="12"
+                app:cv_show_line_number="true"
+                app:cv_start_line_number="1"
+                app:cv_wrap_line="true"
+                app:cv_zoom_enable="true" />
+
+         </LinearLayout>
+
+        </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="Receiver.java"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <br.tiagohm.codeview.CodeView
+                        android:id="@+id/code_view_receiver"
+                        android:layout_width="1000.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dip"
+                        app:cv_font_size="12"
+                        app:cv_show_line_number="true"
+                        app:cv_start_line_number="1"
+                        app:cv_wrap_line="true"
+                        app:cv_zoom_enable="true" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,87 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".List4Tab1"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Step 1:Make a empty activity and do coding like below"
-        android:textStyle="italic"
-        android:textColor="#000000"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="activity_main.xml"
-        android:textStyle="bold"
-        android:textColor="#ff0000"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss11"
-        android:layout_marginTop="-65dp"/>
+<?xml version="1.0" encoding="UTF-8"?>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss12"
-        android:layout_marginTop="-123dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MainActivity.java"
-        android:textStyle="bold"
-        android:textColor="#a4c639"
-        android:layout_marginTop="-30dp"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
-    <ImageView
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ss13"
-        android:layout_marginTop="-60dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4386795674493212/7945509482" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss14"
-        android:scaleType="fitXY"
-        android:layout_marginTop="-100dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Step 2:Now make 3 blank fragment activities like from below"
-        android:textStyle="italic"
-        android:textColor="#000000"
-        android:layout_marginTop="15dp"/>
 
-    <ImageView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ss15"
-        android:layout_marginTop="-200dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Step 3:Put the images in the drawable folder(app > res > drawable)which you want to appear on the click of button "
-        android:textColor="#000000"
-        android:textStyle="italic"
-        android:layout_marginTop="-200dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Step 4:Now make the image view inside each 3 fragment_activity.xml like below and leave the Fragment.java file as it is"
-        android:textStyle="italic"
-        android:textColor="#000000"
-        android:layout_marginTop="15dp"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ss16"
-        android:layout_marginTop="-30dp"/>
+        android:layout_below="@id/adView29">
 
-</LinearLayout>
-</ScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <br.tiagohm.codeview.CodeView
+                    android:id="@+id/code_view"
+                    android:layout_width="1000.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip"
+                    app:cv_font_size="12"
+                    app:cv_show_line_number="true"
+                    app:cv_start_line_number="1"
+                    app:cv_wrap_line="true"
+                    app:cv_zoom_enable="true" />
+
+            </LinearLayout>
+
+</HorizontalScrollView>
+
+</androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

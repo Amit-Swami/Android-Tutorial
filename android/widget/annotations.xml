@@ -1,0 +1,5 @@
+<root>
+    <item name='android.widget.ArrayAdapter ArrayAdapter(android.content.Context, int, int, T[])'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

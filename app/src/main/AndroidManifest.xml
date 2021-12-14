@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amitmps.dell.androidtutorials">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/atnew2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.amitmps.dell.androidtutorials.Draw">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+            android:name=".Draw"
+            android:label="Android Tutorial"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".List2" />
+        <activity android:name=".List2Explicit" />
+        <activity android:name=".List4" />
+        <activity android:name=".List5" />
+        <activity android:name=".List7" />
+        <activity android:name=".List7Splash" />
+        <activity android:name=".List8" />
+        <activity android:name=".List11" />
+
+        <receiver android:name=".List11Alarm" />
+
+        <activity android:name=".List12" />
+
+        <service android:name=".List12Vibrate" />
+
+        <activity android:name=".CommonCode"/>
+        <activity android:name=".List15" />
+        <activity android:name=".List21" />
+        <activity android:name=".List22" />
+        <activity android:name=".List23" />
+        <activity android:name=".List22LogedData" />
+        <activity android:name=".List22SignUp" />
+        <activity android:name=".List23Login" />
+        <activity android:name=".List23Profile" />
+        <activity android:name=".Tab3FinalQuizScore" />
+        <activity android:name=".Tab1Grid1" />
+        <activity android:name=".Tab1Grid2" />
+        <activity android:name=".Tab1Grid3" />
+        <activity android:name=".Tab1Grid4" />
+        <activity android:name=".Tab1Grid5" />
+        <activity android:name=".Tab1Grid6" />
+        <activity android:name=".Tab1Grid7" />
+        <activity android:name=".Tab1Grid8" />
+        <activity android:name=".Tab1Grid9" />
+        <activity android:name=".Tab1Grid10" />
+        <activity android:name=".Tab1Grid11" />
+        <activity android:name=".Tab1Grid12" />
+        <activity android:name=".Tab1Grid13" />
+        <activity android:name=".Tab1Grid14" />
+        <activity android:name=".Tab1Grid1List1" />
+        <activity android:name=".Tab1Grid1List2" />
+        <activity android:name=".Tab1Grid1List3" />
+        <activity android:name=".Tab1Grid1List4" />
+        <activity android:name=".Tab1Grid1List5" />
+        <activity android:name=".Tab1Grid1List6" />
+        <activity android:name=".Tab1Grid1List7" />
+        <activity android:name=".Tab1Grid1List8" />
+        <activity android:name=".Tab1Grid1List9" />
+        <activity android:name=".Tab1Grid1List10" />
+        <activity android:name=".Tab1Grid2List1" />
+        <activity android:name=".Tab1Grid2List2" />
+        <activity android:name=".Tab1Grid2List3" />
+        <activity android:name=".Tab1Grid2List4" />
+        <activity android:name=".Tab1Grid2List5" />
+        <activity android:name=".Tab1Grid2List6" />
+        <activity android:name=".Tab1Grid3List1" />
+        <activity android:name=".Tab1Grid3List2" />
+        <activity android:name=".Tab1Grid3List3" />
+        <activity android:name=".Tab1Grid3List4" />
+        <activity android:name=".Tab1Grid3List5" />
+        <activity android:name=".Tab1Grid3List6" />
+        <activity android:name=".Tab1Grid5List1" />
+        <activity android:name=".Tab1Grid5List2" />
+        <activity android:name=".Tab1Grid5List3" />
+        <activity android:name=".Tab1Grid5List4" />
+        <activity android:name=".Tab1Grid5List5" />
+        <activity android:name=".Tab1Grid7List1" />
+        <activity android:name=".Tab1Grid7List2" />
+        <activity android:name=".Tab1Grid7List3" />
+        <activity android:name=".Tab1Grid7List4" />
+        <activity android:name=".Tab1Grid8List1" />
+        <activity android:name=".Tab1Grid8List2" />
+        <activity android:name=".Tab1Grid8List3" />
+        <activity android:name=".Tab1Grid8List4" />
+        <activity android:name=".Tab1Grid12List1" />
+        <activity android:name=".Tab1Grid12List2" />
+        <activity android:name=".Tab1Grid12List3" />
+        <activity android:name=".Tab1Grid12List4" />
+        <activity android:name=".Tab1Grid12List5" />
+        <activity android:name=".Tab1Grid14List1" />
+        <activity android:name=".Tab1Grid14List2"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4386795674493212~5676148808"/>
+
+    </application>
+
+</manifest>

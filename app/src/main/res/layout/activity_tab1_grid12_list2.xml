@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab1Grid12List2"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Tutorial"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MultiThreading and task running are old subjects. Java itself has java.util.concurrent package and Fork/Join framework to facilitate it. Several libraries have been written to streamline asynchronous operations. RxJava is the most popular library today for reactive programming and designing an asynchronous application."
+        android:textColor="#000"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"
+        android:text="So, why am I writing about the old school?"
+        android:textStyle="bold|italic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Looper, Handler, and HandlerThread are the Android’s way of solving the problems of asynchronous programming. They are not old school, but a neat structure on which a complex android framework is built.
+
+For new developers, it’s highly recommended to understand the principles behind them and experienced one’s should revisit this topic to recollect the minor details."
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginTop="15dp">
+
+    </View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginTop="10dp">
+
+    </View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="17dp"
+        android:textColor="#000"
+        android:text="Use Cases:"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="1. The main thread in Android is built with a Looper and Handlers. So, the understanding of it is essential to create an unblocked responsive UI."
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="2. The developers writing libraries cannot afford to use third party libraries because of the library size. So, for them, the best option is to utilize the existing available resource. Writing own solution for it may not always get that level of efficiency and optimization."
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="3. The same argument can also be made for companies/individuals shipping out SDKs. The clients can have varied implementations, but all of them will share the common android framework APIs."
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="4. Understanding them fully will enhance the capacity to follow the Android SDK and package classes in general."
+        android:textColor="#000"/>
+
+</LinearLayout>
+</ScrollView>

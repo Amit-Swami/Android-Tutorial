@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab1Grid5List5"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Tutorial"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textColor="#a4c"
+        android:textStyle="bold"
+        android:text="InterFragment Communication:"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In this tutorial android inter fragment communication is explained. Fragments in android are utilized to fully use screen area of the mobile device.Â  Our final target is to make an application that will have one fragment in the activity at the time when the mobile device is in vertical position, and have more then one fragment when the mobile device is in horizontal position. So far, we will focus on more simple example in which we have two fragments inside one activity all the time. So in here, one fragment communicating with other fragments example in android is given. Let’s start new android project and add two fragments inside. Then, give no id to the fragments in their XML. Instead, fragments will have id inside of XML of the only activity inside the project. Now, let’s call upper fragment as “Upper”, and lower fragment as “Lower”.Â  Then set background color of “Upper” to blue (as the color of the sky) and set background color of the “Lower” to green (as the color of the grass), in order to make the difference in appearance. Then put an button in “Upper” fragment, and one text view in “Lower” fragment. Change fragment layout on both fragments from FrameLayout to RelativeLayout. "
+        android:textColor="#000"
+        android:textSize="16sp"/>
+
+</LinearLayout>

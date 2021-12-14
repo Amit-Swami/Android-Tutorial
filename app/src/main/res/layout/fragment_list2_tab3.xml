@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffff0000">
+
+    <TextView
+        android:id="@+id/explicittextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54.0dip"
+        android:gravity="center"
+        android:text="Activity 1"
+        android:textColor="#ffffffff"
+        android:textSize="30.0dip" />
+
+    <Button
+        android:id="@+id/explixitb1"
+        android:layout_width="204.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116.0dip"
+        android:text="Go to Activity 2" />
+
+</RelativeLayout>

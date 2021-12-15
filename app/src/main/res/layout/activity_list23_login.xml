@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="30.0dip" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/tv_userlogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="User login" android:fontFamily="serif" />
+    <EditText android:id="@id/ed_Email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:hint="Enter Email" />
+    <EditText android:id="@id/ed_Password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:hint="Enter Password" />
+    <Button android:layout_gravity="center" android:id="@id/btnSignIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sign In" />
+    <TextView android:textSize="15.0dip" android:layout_gravity="center" android:id="@id/tv_sign_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="Not have account?SignUp here" />
+</LinearLayout>

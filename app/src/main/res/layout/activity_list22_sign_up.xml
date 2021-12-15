@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:id="@id/editTextUserName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="USER NAME" />
+    <EditText android:id="@id/editTextPassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="PASSWORD" android:inputType="textPassword" />
+    <EditText android:id="@id/editTextConfirmPassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="CONFIRM PASSWORD" android:inputType="textPassword" />
+    <Button android:id="@id/buttonCreateAccount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CREATE ACCOUNT" />
+</LinearLayout>

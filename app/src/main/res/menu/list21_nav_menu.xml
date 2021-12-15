@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_android_black_24dp" android:id="@id/item1" android:title="Item 1" />
+        <item android:icon="@drawable/ic_announcement_black_24dp" android:id="@id/item2" android:title="Item 2" />
+        <item android:icon="@drawable/ic_mode_edit_black_24dp" android:id="@id/item3" android:title="Item 3" />
+    </group>
+    <item android:title="section 2">
+        <menu>
+            <item android:icon="@drawable/ic_screen_share_black_24dp" android:id="@id/item4" android:title="Item 4" />
+        </menu>
+    </item>
+    <item android:title="section 3">
+        <menu>
+            <item android:icon="@drawable/ic_error_outline_black_24dp" android:id="@id/item5" android:title="Item 5" />
+        </menu>
+    </item>
+</menu>

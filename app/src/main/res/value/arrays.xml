@@ -1,1 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_names">
+        <item>Hello World</item>
+        <item>Explicit Intent</item>
+        <item>Implicit Intent</item>
+        <item>Fragments</item>
+        <item>Spinner</item>
+        <item>Multiple Choice</item>
+        <item>Splash Screen</item>
+        <item>Async Task</item>
+        <item>Date&amp;Time Picker</item>
+        <item>Notification</item>
+        <item>Alarm</item>
+        <item>Vibration</item>
+        <item>ListView</item>
+        <item>GridView</item>
+        <item>RecyclerView</item>
+        <item>Text To Speech</item>
+        <item>Speech To Text</item>
+        <item>Sensor</item>
+        <item>Json</item>
+        <item>Alert Dialogbox</item>
+        <item>Navigation Drawer</item>
+        <item>Database</item>
+        <item>Firebase</item>
+    </string-array>
+    <string-array name="planet_name">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>
 

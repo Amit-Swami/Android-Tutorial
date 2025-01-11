@@ -11,6 +11,8 @@ Android Tutoial is a learning platform for beginner level. Its aims to be the st
 
 **Local Database:** Sqlite & Shared prefrence
 
+## Demo
+https://play.google.com/store/apps/details?id=com.amitmps.dell.androidtutorial
 ## Features
 
 - Theory(fundamental concepts)

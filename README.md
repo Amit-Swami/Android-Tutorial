@@ -37,7 +37,7 @@ Third section -> Quiz section for fun which sharpen your mind
 
 ## Run locally
 ```javascript
-git clone https://github.com/Amit-Swami/Asmr-TodoList
+git clone https://github.com/Amit-Swami/Android-Tutorial
 ```
 
 ## Made by
